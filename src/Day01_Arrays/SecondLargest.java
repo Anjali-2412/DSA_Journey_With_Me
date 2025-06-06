@@ -1,4 +1,4 @@
-package com.dsa.day01;
+package Day01_Arrays  ;
 
 public class SecondLargest {
 	
