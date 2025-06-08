@@ -1,4 +1,4 @@
-package Day03_Arrays;
+package Day03;
 
 import java.util.HashSet;
 
