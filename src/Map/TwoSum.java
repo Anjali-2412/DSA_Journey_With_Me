@@ -17,6 +17,8 @@ public class TwoSum {
 				return new int[] {map.get(second),i};
 			}
 			map.put(arr[i], i);
+			
+			
 		}
 		
 		return new int[] {};
