@@ -48,5 +48,5 @@ public class MergeTwoSortedArrayIntoSortedList {
 		System.out.println("Merged List: "+mergedList);
 	}
 	
-	//time complexity --- //o(n+m) 
+	//time complexity --- //o(n+m)  // manual merge is fast as compare to stream sort
 }
