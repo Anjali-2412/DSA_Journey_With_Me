@@ -15,7 +15,7 @@ public class MergeTwoSortedArrayIntoSortedList {
 		int i=0,j=0;
 		
 		//Merge both arrays unto; one finishes
-		while(i<a.length && j<b.length) {
+		while(i<a.length && j<b.length) {   // n=length of array b and m = length of array b :- o(n+m)
 			if(a[i]<b[j]) {
 				merge.add(a[i]);
 				i++;
@@ -27,13 +27,13 @@ public class MergeTwoSortedArrayIntoSortedList {
 		}
 		//Add remaining elements from a (if any)
 		while(i<a.length) {
-			merge.add(a[i]);
+			merge.add(a[i]);                            //o(n+m) 
 			i++;
 		}
 		
 		//Add remaining elements from b (if any)
 		while(j<b.length) {
-			merge.add(b[j]);
+			merge.add(b[j]);							//o(n+m) 
 			j++;
 		}
 		
@@ -48,5 +48,5 @@ public class MergeTwoSortedArrayIntoSortedList {
 		System.out.println("Merged List: "+mergedList);
 	}
 	
-	
+	//time complexity --- //o(n+m) 
 }
