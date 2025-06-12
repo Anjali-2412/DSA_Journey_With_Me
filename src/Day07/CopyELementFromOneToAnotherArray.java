@@ -22,3 +22,25 @@ public class CopyELementFromOneToAnotherArray {
 		}
 	
 }}
+
+/*Time Complexity:
+You have two separate loops, each running n times, where n is the length of the array:
+
+Copying elements loop:
+Runs n times ⇒ O(n)
+
+Printing elements loop:
+Runs n times ⇒ O(n)
+
+But they are not nested, so total time complexity is:
+
+             O(n)+O(n)=O(n)
+​
+ 
+Space Complexity: O(n)
+You are creating a new array of the same size.
+
+*/
+
+​
+ 

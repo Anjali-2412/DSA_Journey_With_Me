@@ -27,3 +27,14 @@ public class ArrayContainsUniqueElement {
 		}
 	}
 }
+
+//Best Case: o(1)
+//In the best case, a duplicate is found at the beginning 
+//(e.g., arr[0] == arr[1])
+
+//Worst case : o(n2)
+//when there are no duplicates, the inner loop runs fully each time.
+
+//Space Complexity: 𝑂(1)
+//You're not using any additional data structures, so:
+
