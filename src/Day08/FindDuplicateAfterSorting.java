@@ -32,5 +32,6 @@ public class FindDuplicateAfterSorting {
 			System.out.println("None");
 		}
 		
-	}
+	}//time complexity - o(n log n)
+	//space = o(1)
 }
