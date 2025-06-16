@@ -4,8 +4,8 @@ public class Test {
 
 	public static void main(String[] args) {
 		//====Thread start using extending thread class
-		//CreationOfThread th = new CreationOfThread();
-		//th.start();
+		//CreationOfThread th = new CreationOfThread();  // Thread is NEW state
+		//th.start();                                    // RUNNABLE - 2nd LIFE CYCLE
 		
 		
 		//====Thread starting using Runable interface
