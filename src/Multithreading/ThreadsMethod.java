@@ -64,4 +64,4 @@ public class ThreadsMethod extends Thread {
 		
 	}
 }
-//Start || run || sleep || join || setPriority || interrupt || yield
+//Start || run || sleep || join || setPriority || interrupt || yield || SetDaemon
