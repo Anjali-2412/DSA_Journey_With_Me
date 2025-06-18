@@ -6,6 +6,7 @@ public class firstRepeatedCharUsingArray {
 	   int[] cnt = new int[256]; 
 	   for(char ch : word.toCharArray()) {
 		   cnt[ch]++;
+		   System.out.println(cnt[ch] + " : "+ch);
 		   
 	   }
 	   for(char ch : word.toCharArray()) {

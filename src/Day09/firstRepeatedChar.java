@@ -7,7 +7,8 @@ public class firstRepeatedChar {
   // Write a program to find the first repeated character in a string form last
 
 	public static void main(String[] args) {
-		String word = "Programming";
+		String word = "Programming"
+				+ " ";
 		char result = findFirstRepeatedChar(word);
 		if(result != 0) {
 			System.out.println("First repeated character from start : "+result);
