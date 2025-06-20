@@ -18,7 +18,8 @@ public class firstNonRepeatChar {
 					break;
 				}
 			}
-			
+			//time complexity : o(n)
+			//space complexity : o(n)
 			
 			
 			
