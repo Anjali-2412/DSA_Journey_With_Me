@@ -1,6 +1,8 @@
 package Day12;
 
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class MaxOccurringCharacter {
 	public static void main(String[] args) {
@@ -10,15 +12,25 @@ public class MaxOccurringCharacter {
 			charCount.put(ch, charCount.getOrDefault(ch, 0)+1);
 			
 		}
-		char maxChar = str.charAt(0);
-		int maxCount =0;
-		for(char c : charCount.keySet()) {
-			if(charCount.get(c)>maxCount) {
-				maxCount=charCount.get(c);
-				maxChar=c;
+		//find the max frequency
+		
+		int maxCount =Collections.max(charCount.values());
+		
+		//print all character with Max frequcency
+		System.out.print("Max occurring character(s): ");
+		for(Entry<Character, Integer> entry : charCount.entrySet()) {
+			if(entry.getValue() == maxCount) {
+				System.out.print(entry.getKey()+"  ");
+				
 			}
+			
 		}
-		System.out.println(maxChar);
+		System.out.println("\nFrequency : "+maxCount);
+		
+		
+		
+		
+		
 	}
 	
 }
