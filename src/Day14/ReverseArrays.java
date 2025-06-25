@@ -24,4 +24,7 @@ public class ReverseArrays {
 		
 		System.out.println("Reversed Array : "+Arrays.toString(arr));
 }
+ 
+ //space = o(1)
+ //time = o(n)
 }
