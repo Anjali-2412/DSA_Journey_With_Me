@@ -14,5 +14,13 @@ public class PracticeOnArrays {
 	
 	int[] markk = {1,2,3,4,5};
 	System.out.println(markk);
+	
+	//reverse an array in place:-
+	
 	}
+	
+	
+	
+	
+	
 }
