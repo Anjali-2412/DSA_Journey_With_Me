@@ -31,4 +31,7 @@ public class TwoSumSolution_LeetCode_Q1 {
 		int[] result = twoSum(nums,target);
 		System.out.println("Indices : "+result[0]+" , "+result[1]);
 	}
+	
+	
+	//time complexity = o(n) -> very fast!
 }
