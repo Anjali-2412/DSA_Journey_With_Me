@@ -11,3 +11,5 @@ public class fibonaccieSeries {
 		}
 	}
 }
+//time complexity : o(n)
+//space complexity : o(1)
