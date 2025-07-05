@@ -20,6 +20,7 @@ public class Valid_Parenthesis_UsingStack_Map {
 			if(bracketMap.containsKey(ch)) {
 				char top = stack.isEmpty() ? '#' : stack.pop();
 				if(top != bracketMap.get(ch)) {
+					System.out.println(bracketMap.get(ch));
 					return false;
 				}
 				
@@ -38,9 +39,9 @@ public class Valid_Parenthesis_UsingStack_Map {
 	
 	
 	public static void main(String[] args) {
-		System.out.println(isValid("()"));       // true
-        System.out.println(isValid("()[]{}"));   // true
-        System.out.println(isValid("(]"));       // false
-        System.out.println(isValid("([)]"));     // false
+		System.out.println(isValid("({[]})"));       // true
+        //System.out.println(isValid("()[]{}"));   // true
+       // System.out.println(isValid("(]"));       // false
+       // System.out.println(isValid("([)]"));     // false
 	}
 }
