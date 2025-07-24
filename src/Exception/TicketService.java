@@ -17,13 +17,17 @@ class TicketManager{
 public class TicketService {
 	public static void main(String[] args) {
 		TicketManager manager = new TicketManager();
-		    manager.updateStatus("CLOSED");//valid
+		try {
 			manager.updateStatus("PENDING");//Invalid
+		}catch(InvalidTicketStatusException e) {
+			System.out.println("caught : "+e.getMessage());
+		}
 		
-		
-		
-			
-		
+		try {
+			manager.updateStatus("CLOSED");//valid
+		}catch(InvalidTicketStatusException e) {
+			System.out.println("Caught :"+e.getMessage());
+		}
 		
 		
 	}
