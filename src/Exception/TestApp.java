@@ -12,7 +12,9 @@ public class TestApp {
 	}
 	
 	public static void main(String[] args) {
-		validateAge(15);
+		validateAge(21);
+		validateAge(12);
+		
 	}
 	
 }
