@@ -26,7 +26,19 @@ public static void main(String[] args) {
 	
 	for(int num : merge) {
 		System.out.print(num+" ");
+		
 	}
+	System.out.println();
+	//=============================
+	
+	int[] x = {5,8,20};
+	int[] y = {4,11,15};
+	int[] m = IntStream.concat(Arrays.stream(x), Arrays.stream(y)).sorted().toArray();
+	for(int n : m) {
+		System.out.print(n+" ");
+	}
+	
+	
 	
 	
 }

@@ -14,6 +14,18 @@ public static void main(String[] args) {
 			.mapToInt(Integer::intValue) //This list of Stream is type Integer(wrapper class) but .sum() works on primitive int. andInteger::intValue is method reference same as : x->x.intValue().
 			.sum();
 	System.out.println("sum : "+sum);
+	
+	//------------------------------------------
+	List<Integer> l = Arrays.asList(1,2,3);
+	int s = l.stream()
+			.mapToInt(x->x.intValue())
+			.sum();
+	System.out.println("hyyy: "+s);
+	
+	int s1 = l.stream()
+			.mapToInt(Integer::intValue)
+			.sum();
+	System.out.println(s1);
 			
 }
 }

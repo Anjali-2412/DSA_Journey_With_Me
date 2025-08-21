@@ -17,5 +17,17 @@ public static void main(String[] args) {
 	Set<Integer> duplicate = Arrays.stream(merge)
 			.filter(s->!seen.add(s)).boxed().collect(Collectors.toSet());
 	System.out.println(duplicate);
+	
+	
+	
+	//--------------------------------------------------------------
+	int[] ar1 = {1,2,3,4,5};
+	int[] ar2 = {4,5,3,6,7};
+	int[] m = IntStream.concat(Arrays.stream(ar1), Arrays.stream(ar2)).toArray();
+	
+	Set<Integer> see = new HashSet<>();
+	Set<Integer> d = Arrays.stream(m)
+			.filter(s->!see.add(s)).boxed().collect(Collectors.toSet());
+	System.out.println(d);
 }
 }

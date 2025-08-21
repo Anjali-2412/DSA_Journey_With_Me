@@ -48,6 +48,21 @@ public class MaxSalaryFind {
 			System.out.println("Max Salaried employee : "+maxSalaryEmp.getName()+" - "+maxSalaryEmp.getSalary());
 			
 			
+			//--------------------------------
+			
+			
+			Employee e =emp.stream().max(Comparator.comparingDouble(Employee::getSalary)).orElse(null);
+			System.out.println(e.getName()+" "+e.getSalary());
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 		}
 }
