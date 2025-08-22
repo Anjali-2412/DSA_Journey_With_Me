@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MissingKeyBoard {
 	
-	public static int missingKeyboards(int[] arr) {
+	public static int missingKeyboards(int arr[]) {
 		
 		int n = arr.length;
 		int min = Integer.MAX_VALUE;
