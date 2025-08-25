@@ -6,7 +6,6 @@ public class FibonacciRangeMultiply {
 		public static long generateFibonacii(int start, int end) {
 			if(start > end )return -1; // invalid range
 			long product =1;
-			
 			int first=0,second=1;
 			
 			for(int i=0;i<=end;i++) {
@@ -31,6 +30,7 @@ public class FibonacciRangeMultiply {
 		public static void main(String[] args) {
 			int startIndex = 5 , endIndex = 4 ;
 			long result = generateFibonacii(startIndex, endIndex);
-			System.out.println("product of Fibonacci numbers from " + startIndex + " to " + endIndex + " = " + result);
+			System.out.println("product of Fibonacci numbers from "
+			+ startIndex + " to " + endIndex + " = " + result);
 		}
 }
