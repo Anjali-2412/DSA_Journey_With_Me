@@ -11,7 +11,6 @@ public class ArmyEscape {
 			
 			boolean[][] visited = new boolean[n][n];
 			return dfs(grid,0,0,visited,n);
-			
 		}
 		private static int dfs(List<List<Integer>> grid , int i ,int j, boolean[][] visited , int n) {
 			if(i < 0 || j < 0 || i >= n|| j >= n || grid.get(i).get(j) == 1 || visited[i][j]) {
@@ -40,12 +39,11 @@ public class ArmyEscape {
 			for(int i = 0; i < n; i++) {
 				List<Integer> row = new ArrayList<>();
 				for(int j =0;j < n ;j++) {
-					row.add(sc.nextInt());
+					row.add(sc.nextInt());// input 0 or 1
 				}
 				grid.add(row);
 			}
 			
 			System.out.println(countPaths(grid, n));
-			
 		}
 }
