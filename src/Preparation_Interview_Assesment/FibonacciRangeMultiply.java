@@ -28,7 +28,7 @@ public class FibonacciRangeMultiply {
 			return product;
 		}
 		public static void main(String[] args) {
-			int startIndex = 5 , endIndex = 4 ;
+			int startIndex = 2 , endIndex = 4 ;
 			long result = generateFibonacii(startIndex, endIndex);
 			System.out.println("product of Fibonacci numbers from "
 			+ startIndex + " to " + endIndex + " = " + result);
